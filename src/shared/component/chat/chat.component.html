@@ -1,0 +1,55 @@
+<div class="chat-container" >
+    <div class="reciever" [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818','color':themeService.currentTheme==='light'?'black':'white'}">
+        <span class="left">
+            <span (click)="handleNavigateBack()" class="arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <span class="image">
+                <img [src]="recieverImage" alt />
+            </span>
+            <span class="name">{{recieverName}}</span>
+        </span>
+        <span class="right">
+            <i (click)="handleShowSearch()"
+               class="fa-solid fa-magnifying-glass">
+            </i>
+            <form [formGroup]="searchForm">
+                <input [ngClass]="{'active': showSearch}"
+                       formControlName="search"
+                       placeholder="search"
+                       type="text" />
+            </form>
+        </span>
+    </div>
+    <div class="chat-subcontainer">
+        <div class="chats">
+            <div [ngClass]="{'my-message': message.senderId === senderId, 'other-message': message.senderId !== senderId}"
+                 *ngFor="let message of chats.messageDetail"
+                 class="message">
+                <div *ngIf="message.isChat===true">{{ message.message }}</div>
+
+                <div *ngIf="message.isChat===false">
+                    <img [src]="message.message" alt class="file photo" />
+                </div>
+            </div>
+        </div>
+        <form [formGroup]="chatForm" class="input-form">
+            <input class="chat-input"
+                   formControlName="currentChat"
+                   placeholder="Type a message"
+                   type="text" />
+            <form action class="file">
+                <label for="image">
+                    <i class="fa-solid fa-paperclip"></i>
+                </label>
+                <input (change)="handleAddPictures($event) "
+                       id="image"
+                       multiple
+                       type="file" accept="image/*" />
+            </form>
+            <span (click)="handleSendChat()">
+                <i class="fa-solid fa-paper-plane"></i>
+            </span>
+        </form>
+    </div>
+</div>

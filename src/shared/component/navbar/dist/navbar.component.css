@@ -1,0 +1,398 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  background-color: rgba(214, 214, 214, 0.233);
+  height: 10vh;
+}
+.navbar-container .nav-left {
+  flex: 1;
+  max-width: 30%;
+}
+.navbar-container .nav-left img {
+  max-width: 30%;
+  /* Make the logo responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space below the image */
+}
+.navbar-container .nav-right {
+  flex: 1;
+  max-width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+}
+.navbar-container .nav-right i {
+  font-size: 0.7rem;
+}
+.navbar-container .nav-right .login {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .login i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .login a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .login:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .login:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .login:hover a {
+  color: white;
+}
+.navbar-container .nav-right .mode {
+  border: 1px solid black;
+  border-radius: 1rem;
+  position: relative;
+  height: 1rem;
+  width: 2.5rem;
+  padding: 0.3rem 0.6rem;
+}
+.navbar-container .nav-right .mode .sun {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.navbar-container .nav-right .mode .moon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.navbar-container .nav-right .signup {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .signup i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .signup a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .signup:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .signup:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .signup:hover a {
+  color: white;
+}
+.navbar-container .nav-right .my-conversations {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .my-conversations i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .my-conversations a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .my-conversations:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .my-conversations:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .my-conversations:hover a {
+  color: white;
+}
+.navbar-container .nav-right .my-conversations.active {
+  background-color: #151515;
+}
+.navbar-container .nav-right .my-conversations.active i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .my-conversations.active a {
+  color: white;
+}
+.navbar-container .nav-right .my-appointments {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .my-appointments i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .my-appointments a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .my-appointments:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .my-appointments:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .my-appointments:hover a {
+  color: white;
+}
+.navbar-container .nav-right .my-appointments.active {
+  background-color: #151515;
+}
+.navbar-container .nav-right .my-appointments.active i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .my-appointments.active a {
+  color: white;
+}
+.navbar-container .nav-right .add-property {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .add-property i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .add-property a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .add-property:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .add-property:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .add-property:hover a {
+  color: white;
+}
+.navbar-container .nav-right .add-property.active {
+  background-color: #151515;
+}
+.navbar-container .nav-right .add-property.active i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .add-property.active a {
+  color: white;
+}
+.navbar-container .nav-right a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar-container .nav-right .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.navbar-container .nav-right .profile .image {
+  border: 1.5px solid rgba(90, 90, 90, 0.432);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-container .nav-right .profile .image img {
+  padding: 0.2rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.navbar-container .nav-right .profile .name {
+  color: rgba(90, 90, 90, 0.932);
+}
+.navbar-container .nav-right .menu {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-container .nav-right .menu i {
+  opacity: 0;
+  padding: 0.5rem;
+}
+.navbar-container .nav-right .menu a {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+}
+.navbar-container .nav-right .menu:hover {
+  background-color: #151515;
+}
+.navbar-container .nav-right .menu:hover i {
+  opacity: 1;
+  color: white;
+}
+.navbar-container .nav-right .menu:hover a {
+  color: white;
+}
+.navbar-container .nav-right .menu .menu-button {
+  cursor: pointer;
+  color: #333;
+  /* Change color as needed */
+}
+.navbar-container .nav-right .menu .dropdown {
+  background-color: #fff;
+  /* Change background color as needed */
+  display: none;
+  border: 1px solid #ccc;
+  /* Add borders or adjust as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Add box shadow or adjust as needed */
+}
+.navbar-container .nav-right .menu .dropdown button {
+  width: 100%;
+  /* Make buttons full-width or adjust as needed */
+  text-align: left;
+  /* Align text to the left or adjust as needed */
+}
+.navbar-container .nav-right .menu .dropdown button div {
+  padding: 8px;
+  /* Add padding to the inner div or adjust as needed */
+}
+.navbar-container .nav-right .menu .dropdown button span {
+  display: block;
+  padding: 8px;
+  /* Add padding to the span or adjust as needed */
+  color: #333;
+  /* Change color as needed */
+  cursor: pointer;
+}
+.navbar-container .nav-right .menu .dropdown button span:hover {
+  background-color: #f0f0f0;
+  /* Add hover background color or adjust as needed */
+}
+
+.light-theme {
+  color: black;
+}
+.dark-theme {
+  color: white !important;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-container {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  .navbar-container .nav-left {
+    max-width: 10%;
+  }
+  .navbar-container .nav-left img {
+    max-width: 100%;
+  }
+
+  .navbar-container .nav-right {
+    max-width: 90%;
+    font-size: 0.5rem;
+  }
+}
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 900px) {
+  .navbar-container {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 1.5rem !important;
+    margin: 0 !important;
+  }
+
+  .navbar-container .nav-right {
+    width: 100%;
+    padding: 0.2rem;
+  }
+
+  .navbar-container .nav-left {
+    display: none;
+  }
+
+  .navbar-container .nav-right {
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .navbar-container .nav-right .profile {
+    display: none;
+  }
+  .navbar-container .nav-right a {
+    display: none;
+  }
+  .navbar-container .nav-right div:hover {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right div:hover i {
+    color: black !important;
+  }
+  .navbar-container .nav-right .my-conversations i {
+    color: black !important;
+    opacity: 1 !important;
+    font-size: 1.2rem !important;
+  }
+  .navbar-container .nav-right .my-conversations:hover {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .my-conversations.active {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .my-appointments {
+    display: none;
+  }
+  .navbar-container .nav-right .menu i {
+    opacity: 1;
+    color: black;
+    font-size: 1.2rem !important;
+  }
+  .navbar-container .nav-right .add-property {
+    background-color: transparent;
+  }
+  .navbar-container .nav-right .add-property i {
+    color: black !important;
+    opacity: 1 !important;
+    font-size: 1.2rem !important;
+  }
+  .navbar-container .nav-right .add-property:hover {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .add-property.active {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .signup i {
+    color: black !important;
+    opacity: 1 !important;
+    font-size: 1.2rem !important;
+  }
+  .navbar-container .nav-right .signup:hover {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .login i {
+    color: black !important;
+    opacity: 1 !important;
+    font-size: 1.2rem !important;
+  }
+  .navbar-container .nav-right .login:hover {
+    background-color: rgba(35, 35, 35, 0.089) !important;
+  }
+  .navbar-container .nav-right .mode {
+    display: none;
+  }
+}

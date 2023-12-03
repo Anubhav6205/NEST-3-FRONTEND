@@ -1,0 +1,111 @@
+.property-container {
+  display: flex;
+  padding: 2rem;
+  min-height: 85vh;
+  font-family: "Jost", sans-serif;
+}
+.property-container .links-container {
+  flex: 1;
+  width: 20%;
+  display: flex;
+}
+.property-container .links-container::after {
+  content: "";
+  display: block;
+  width: 1px; /* Adjust the width of the vertical line */
+  background-color: #000; /* Adjust the color of the vertical line */
+  height: 100%;
+  margin-left: 1rem; /* Adjust the spacing between .links-container and the vertical line */
+}
+.property-container .links-container ul {
+  display: flex;
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+}
+.property-container .links-container ul li {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.property-container .links-container ul li.active {
+  background-color: #e0e0e0;
+}
+.property-container .links-container ul li:hover {
+  background-color: black;
+  color: white;
+}
+.property-container .links-container ul li:hover a {
+  font-size: 1rem;
+}
+.property-container .links-container ul li:hover i {
+  font-size: 2rem;
+}
+.property-container .links-container ul li:hover::after {
+  background-color: white;
+}
+.property-container .links-container ul li::after {
+  content: "";
+  display: block;
+  width: 100%; /* Adjust the width of the horizontal line */
+  background-color: #000; /* Adjust the color of the horizontal line */
+  height: 1px; /* Adjust the height of the horizontal line */
+  margin-top: 0.5rem; /* Adjust the spacing between li items and the horizontal line */
+}
+.property-container .links-container ul li a {
+  font-size: 1rem;
+}
+.property-container .links-container ul li i {
+  font-size: 2rem;
+}
+.property-container .forms {
+  width: 80%;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.arrow {
+  padding: 1rem 0 0 1rem;
+  transition: 0.5s ease-in-out;
+}
+.arrow:hover {
+  color: rgba(70, 54, 177, 0.0862745098);
+}
+
+@media (max-width: 900px) {
+  .property-container {
+    flex-direction: column !important;
+    padding: 10px;
+  }
+  .property-container .links-container {
+    width: 100%;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .property-container .links-container ul {
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .property-container .links-container ul li {
+    height: 8rem;
+    text-align: center;
+  }
+  .forms {
+    width: 100% !important;
+  }
+}
+.arrow {
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.arrow:hover {
+  color: rgba(70, 54, 177, 0.0862745098);
+}/*# sourceMappingURL=property.component.css.map */

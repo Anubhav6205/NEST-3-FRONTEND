@@ -1,0 +1,115 @@
+.property-details-container {
+  transition: 0.5s ease-in-out;
+}
+.property-details-container form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 900px) {
+  .property-details-container form {
+    margin: 0 0 5rem 0;
+  }
+}
+.property-details-container form .column-1,
+.property-details-container form .column-2,
+.property-details-container form .column-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 900px) {
+  .property-details-container form .column-1,
+  .property-details-container form .column-2,
+  .property-details-container form .column-3 {
+    grid-template-columns: 1fr;
+  }
+  .property-details-container form .column-1 div,
+  .property-details-container form .column-2 div,
+  .property-details-container form .column-3 div {
+    width: 100%;
+  }
+}
+.property-details-container form .column-1 .column-22,
+.property-details-container form .column-2 .column-22,
+.property-details-container form .column-3 .column-22 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.property-details-container form .column-1 div,
+.property-details-container form .column-2 div,
+.property-details-container form .column-3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.property-details-container form .column-1 div label,
+.property-details-container form .column-2 div label,
+.property-details-container form .column-3 div label {
+  margin-bottom: 0.5rem;
+}
+.property-details-container form .column-1 div select,
+.property-details-container form .column-1 div input,
+.property-details-container form .column-2 div select,
+.property-details-container form .column-2 div input,
+.property-details-container form .column-3 div select,
+.property-details-container form .column-3 div input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem; /* Adjust font size */
+}
+.property-details-container form .column-1 div select,
+.property-details-container form .column-2 div select,
+.property-details-container form .column-3 div select {
+  background-color: #fff; /* Set background color for select */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+.property-details-container form .column-3 {
+  position: relative;
+}
+.property-details-container form .column-3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.property-details-container form .column-3 div label {
+  margin-bottom: 0.5rem;
+}
+.property-details-container form .column-3 div select,
+.property-details-container form .column-3 div input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.property-details-container form .column-3 div select {
+  background-color: #fff;
+  cursor: pointer;
+}
+.property-details-container form .column-3 .column-32 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.property-details-container form button {
+  width: 100%;
+  background-color: #000000; /* Set button background color */
+  color: #fff; /* Set button text color */
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 900px) {
+  .property-details-container form button {
+    position: relative;
+  }
+}/*# sourceMappingURL=property-details.component.css.map */

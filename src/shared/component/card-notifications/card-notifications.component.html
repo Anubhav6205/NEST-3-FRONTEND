@@ -1,0 +1,17 @@
+<div class="card-notification-container"  [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#201c21',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+    'box-shadow': themeService.currentTheme === 'light' ? 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px' : 'white'
+  }">
+    <div class="left">
+        <img [src]="notification.landlordDetails?.profilePicture" alt />
+    </div>
+    <div class="right">
+        <div class="landlord-details">
+            {{notification.landlordDetails?.firstName}} {{notification.landlordDetails?.lastName}} just added a new Property in {{notification.propertyDetails?.locality}}, {{notification.propertyDetails?.city}}
+        </div>
+        <div class="propertyDetails">
+            A {{handleGetBhkType(notification.propertyDetails?.bhkType)}} {{notification.propertyDetails?.apartmentType}} for ₹{{notification.rentalDetails?.expectedRent}} 
+        </div>
+    </div>
+</div>

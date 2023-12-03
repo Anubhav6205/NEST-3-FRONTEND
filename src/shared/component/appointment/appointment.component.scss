@@ -1,0 +1,149 @@
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+
+
+
+    button {
+      background-color: #2196F3; // or your desired color
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #1565C0; // or your desired hover color
+      }
+    }
+  }
+
+  .slot-container {
+    width: 100%;
+
+
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .slots {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 0;
+
+      .morning-container,
+      .afternoon-container,
+      .evening-container {
+        flex: 1;
+        text-align: center;
+        margin: 0 10px;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        .morning,
+        .afternoon,
+        .evening {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: .5rem;
+
+          button {
+            // background-color: #4CAF50; 
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.295);
+            border-radius: .2rem;
+            color: #000000;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: .52rem;
+
+            &.active {
+              background-color: #4a2fd3;
+              color: #fff;
+            }
+
+            &:hover {
+              color: black;
+              background-color: rgba(131, 128, 218, 0.253)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .appointment-container {
+    width: 100%;
+    overflow-y: auto;
+
+    mat-form-field {
+      width: 80%;
+
+      button {
+        width: 80%;
+      }
+    }
+
+    .slot-container {
+      width: 100%;
+
+      .slots {
+        flex-direction: column;
+        padding: 1rem;
+
+        .morning-container,
+        .afternoon-container,
+        .evening-container {
+          margin: 0;
+
+          .morning,
+          .afternoon,
+          .evening {
+            display: grid;
+            justify-content: center;
+
+            gap: .5rem;
+
+            button {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      width: 80%;
+    }
+  }
+}

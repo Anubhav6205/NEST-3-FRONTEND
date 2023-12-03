@@ -1,0 +1,127 @@
+<div (click)="handleNavigateBack()" class="arrow">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+<div *ngIf="propertiesData.length!=0;  else elseBlock" >
+    <div class="hamburger">
+        <i class="fa-solid fa-xmark" *ngIf="filtersVisible" (click)="filtersVisible=!filtersVisible"></i>
+        <i class=" fa-solid fa-bars" *ngIf="!filtersVisible" (click)="filtersVisible=!filtersVisible"></i>
+    </div>
+    <div class="search-result-container d-flex">
+        <div class="filters" [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818','color':themeService.currentTheme==='light'?'black':'white','width':filtersVisible?'':'0%','transform':filtersVisible?'translateX(0px)':'translateX(-100px)'}" >
+            <div class="heading">
+                <p>Filters</p>
+            </div>
+            <div class="bhk-container">
+                <p>BHK Type</p>
+                <div class="bhk-data">
+                    <div *ngFor="let bhkType of bhkTypes">
+                        <button (click)="handleBhkType(bhkType.value) "
+                                [class.active]="bhkType.value===currentBHK"
+                                [value]="bhkType.value" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{ bhkType.label }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="apartment-type-container mt-3">
+                <p>Property Type</p>
+
+                <div class="apartment-data">
+                    <div *ngFor="let type of apartmentTypes">
+                        <button (click)="handleApartmentType(type)"
+                                [class.active]="type===currentType" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{type}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="property-age-container">
+                <p>Property Age</p>
+
+                <div>
+                    <div *ngFor="let age of propertyAges">
+                        <button (click)="handlePropertyAge(age.value)"
+                                [class.active]="age.value===currentAge" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{age.label}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="facing-direction">
+                <p>Facing Direction</p>
+
+                <div class="direction-data">
+                    <div *ngFor="let facingDirection of facingDirections">
+                        <button (click)="handleFacingDirection(facingDirection)"
+                                [class.active]="facingDirection===currentDirection"
+                                [value]="facingDirection" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{facingDirection }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="furnish-types-container">
+                <p>Furnish Types</p>
+
+                <div class="furnish-data">
+                    <div *ngFor="let furnishType of furnishTypes">
+                        <!-- <label class="mr-3">
+                        <input (change)="handleFurnishTypes(furnishType.value)"
+                               [value]="furnishType.value"
+                               name="propertyAge"
+                               type="radio" />
+                        {{ furnishType.label }}
+                        </label>-->
+                        <button (click)="handleFurnishTypes(furnishType.value)"
+                                [class.active]="furnishType.value===currentFurnishing" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{furnishType.label}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parking-options-container">
+                <p>Parking Options</p>
+
+                <div class="parking-data">
+                    <div *ngFor="let parkingOption of parkingOptions">
+                        <!-- <label class="mr-3">
+                        <input (change)="handleParkingOption(parkingOption.value)"
+                               [value]="parkingOption.value"
+                               name="propertyAge"
+                               type="radio" />
+                        {{ parkingOption.label }}
+                        </label>-->
+                        <button (click)="handleParkingOption(parkingOption.value)"
+                                [class.active]="parkingOption.value===currentParking" 
+                                [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)','color':themeService.currentTheme==='light'?'black':'white'}">
+                            {{ parkingOption.label }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <ul>
+                <li *ngFor="let propertyData of filteredPropertiesData">
+                    <app-card-property [propertyData]="propertyData">
+                    </app-card-property>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    <div class="no-content">
+        <i class="fa-solid fa-face-meh"></i>
+        <p>No Places Found, Search for other places.</p>
+    </div>
+</ng-template>

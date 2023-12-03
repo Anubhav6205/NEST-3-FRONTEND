@@ -1,0 +1,63 @@
+<div class="card-property-container" data-aos="fade-up" data-aos-delay="200"  [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#201c21',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+    'box-shadow': themeService.currentTheme === 'light' ? 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px' : 'white'
+  }">
+    <div class="card-top">
+        <div class="top-left">
+            <div class="image">
+                <button (click)="handlePrev()" class="prev"><i class="bi bi-caret-left"></i></button>
+                <img [src]="property.propertyGallery?.[currentIndex]" alt />
+                <button (click)="handleNext()" class="next"><i class="bi bi-caret-right"></i></button>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="top">
+                <div class="title">
+                    <span>{{property.propertyDetails?.name}}</span>
+                    <span>
+                        {{handleGetBhkType(property.propertyDetails?.bhkType)}} {{property.propertyDetails?.apartmentType}}
+                    </span>
+                </div>
+                <div class="sub-title">
+                    {{property.propertyDetails?.locality}}, {{property.propertyDetails?.city}}
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="parking-container">
+                    <p class="parking bold">
+                        {{handleParking(property.rentalDetails?.parking)}}
+                    </p>
+                    <p class="label">Parking</p>
+                </div>
+                <div class="furnish-container">
+                    <p class="furnish bold">
+                        {{handleFurnishing(property.rentalDetails?.furnishing)}}
+                    </p>
+                    <p class="label">Furnishing Status</p>
+                </div>
+                <div class="facing-container">
+                    <p class="facing bold">
+                        {{property.propertyDetails?.facingDirection}}
+                    </p>
+                    <p class="label">Facing Direction</p>
+                </div>
+                <div class="age-container">
+                    <p class="age bold">
+                        {{handlePropertyAge(property.propertyDetails?.propertyAge)}}
+                    </p>
+                    <p class="label">Property Age</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="price-container">
+                    <div>
+                    <span>₹</span>
+                    <span class="price">{{property.rentalDetails?.expectedRent}}</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

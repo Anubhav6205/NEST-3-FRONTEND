@@ -1,0 +1,50 @@
+.appointment-card-container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.5s ease-in-out !important;
+}
+.appointment-card-container .card-top .image {
+  width: 100%;
+}
+.appointment-card-container .card-top .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+.appointment-card-container .card-bottom {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: -moz-max-content;
+  height: max-content;
+  transition: 0.5s ease-in-out;
+  gap: 1.2rem;
+}
+.appointment-card-container .card-bottom .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointment-card-container .card-bottom .top .time {
+  font-size: 0.6rem;
+}
+.appointment-card-container .card-bottom .middle {
+  font-size: 1.5rem;
+}
+.appointment-card-container .card-bottom .bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .card-bottom {
+    text-align: center;
+  }
+  .card-bottom .top {
+    flex-direction: column !important;
+  }
+}/*# sourceMappingURL=card-appointment.component.css.map */

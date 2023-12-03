@@ -1,0 +1,216 @@
+<div (click)="handleNavigateBack()" class="arrow" [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#181818',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+   
+  }">
+    <i class="fa-solid fa-arrow-left"></i>
+</div>
+<div [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818'}"
+     class="details-container">
+    <div class="carousel">
+        <div class="image">
+            <button (click)="handlePrev()" class="prev">
+                <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <img [class.transitioning]="isTransitioning"
+                 [ngClass]="{'transitioning-remove': isTransitioning}"
+                 [src]="currentImage"
+                 alt />
+            <button (click)="handleNext()" class="next">
+                <i class="bi bi-caret-right-fill"></i>
+            </button>
+        </div>
+        <div *ngIf="propertyData.propertyGallery && propertyData.propertyGallery.length > 0"
+             class="small-images">
+            <ng-container *ngFor="let imageUrl of propertyData.propertyGallery; let i = index">
+                <img [src]="imageUrl" *ngIf="i > 0 && i <= 4" alt />
+            </ng-container>
+        </div>
+    </div>
+    <div class="details-main">
+        <div class="details-center">
+            <div [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}"
+                 class="heading">
+                <div class="title">
+                    <p>{{propertyData.propertyDetails?.name}}</p>
+                </div>
+                <div class="sub-title">
+                    <div class="details">
+                        {{handleGetBhkType(propertyData.propertyDetails?.bhkType)}} {{propertyData.propertyDetails?.apartmentType}} - 3580 sq.ft
+                    </div>
+
+                    <p class="location">
+                        {{propertyData.propertyDetails?.locality}}, {{propertyData.propertyDetails?.city}}
+                    </p>
+                </div>
+            </div>
+            <div [ngStyle]="{
+                'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#201c21',
+                'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+                'box-shadow': themeService.currentTheme === 'light' ? 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px' : 'white'
+              }"
+                 class="other-details">
+                <div class="price d-flex align-items-center">
+                    <sub>₹</sub>
+
+                    <div class="rent">
+                        {{handleRent(propertyData.rentalDetails?.expectedRent!)}}
+                    </div>
+                </div>
+                <div class="furnish">
+                    <div class="label">Furnishing</div>
+                    <div class="value">
+                        {{handleFurnishing(propertyData.rentalDetails?.furnishing)}}
+                    </div>
+                </div>
+                <div class="facing">
+                    <div class="label">Facing</div>
+                    <div class="value">
+                        {{propertyData.propertyDetails?.facingDirection}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-details">
+                <div [ngStyle]="{
+                    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#201c21',
+                    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+                    'box-shadow': themeService.currentTheme === 'light' ? 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px' : 'white'
+                  }"
+                     class="overview">
+                    <p class="heading">Overview</p>
+                    <div class="overview-container">
+                        <div class="left">
+                            <div class="left-1">
+                                <p>
+                                    <i class="fa-regular fa-compass"></i> Facing Direction
+                                </p>
+                                <p>
+                                    <i class="bi bi-building"></i> Floors Avaiable
+                                </p>
+                                <p>
+                                    <i class="bi bi-shield"></i>
+                                    Gated Security
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-droplet"></i> Water Supply
+                                </p>
+                            </div>
+                            <div class="left-2">
+                                <p>
+                                    {{propertyData.propertyDetails?.facingDirection}}
+                                </p>
+                                <p>{{propertyData.propertyDetails?.floor}}</p>
+                                <p>Yes</p>
+                                <p>24/7</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-1">
+                                <p>
+                                    <i class="fa-solid fa-couch"></i> Furnishing Status
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-bath"></i> Bathroom
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-drumstick-bite"></i> Non Veg Allowed
+                                </p>
+                            </div>
+                            <div class="right-2">
+                                <p>
+                                    {{handleFurnishing(propertyData.rentalDetails?.furnishing)}}
+                                </p>
+                                <p>3</p>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="appointment">
+                        <button (click)="handleScheduleAppointment()">
+                            Add Appointment
+                        </button>
+                    </div>
+                    <div (click)="scrollToReviewsSection()" class="review">
+                        <button>Review Property</button>
+                    </div>
+                    <div class="owner-details">
+                        <button (click)="handleGetOwnerDetails()">
+                            Owner Details
+                        </button>
+                    </div>
+                    <div (click)="handleChat()" class="chat-owner">
+                        <button>Chat with Owner</button>
+                    </div>
+                </div>
+            </div>
+            <div [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}"
+                 class="rent-payment">
+                <p>Already a tenant?</p>
+                <button (click)="handleBuyClick()">Pay Rent</button>
+            </div>
+        </div>
+<!-- 
+        <app-map></app-map> -->
+
+        <div #reviewsSection class="reviews">
+            <p>Our Happy Clients</p>
+            <div class="user-reviews">
+        
+                <div *ngFor="let review of reviews">
+                   
+                    <div class="review-card">
+                        <div class="top">
+                            <div class="left">
+                                <div class="image">
+                                    <img [src]="review.user?.profilePicture"
+                                         class="rounded-circle" />
+                                </div>
+                                <div class="name">
+                                    <span>
+                                        {{review.user?.firstName}} {{review.user?.lastName}}
+                                    </span>
+                                </div>
+                            </div>
+                  
+                            <div class="right">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p>{{review.review}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form [formGroup]="reviewForm" class="your-review">
+                <div class="form-group">
+                    <label for="reviewTextarea">Your Review</label>
+                    <textarea class="form-control"
+                              formControlName="review"
+                              id="reviewTextarea"
+                              rows="5">
+                    </textarea>
+                </div>
+                <button (click)="handleReviewSubmit()" class="btn btn-primary">
+                    Submit Review
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

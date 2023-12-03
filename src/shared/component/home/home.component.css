@@ -1,0 +1,517 @@
+.home-component {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.home-component .animation-image {
+  z-index: 5;
+  position: absolute;
+  top: 64vh;
+  right: 0;
+  width: 100vw;
+  height: 55vh;
+}
+.home-component .animation-bg-1 {
+  position: absolute;
+  height: 45vh;
+  z-index: 1;
+  top: 78vh;
+  left: 5vw;
+}
+.home-component .animation-bg-2 {
+  position: absolute;
+  height: 55vh;
+  z-index: 1;
+  top: 78vh;
+  left: 25vw;
+}
+.home-component .animation-bg-3 {
+  position: absolute;
+  height: 35vh;
+  z-index: 1;
+  top: 92vh;
+  left: 62vw;
+}
+.home-component .animation-sun {
+  position: absolute;
+  height: 10vh;
+  z-index: 1;
+  top: 100vh;
+  right: 5vw;
+}
+.home-component .home-top {
+  margin: 6rem 0;
+  text-align: center;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+.home-component .home-top .heading {
+  font-size: 2rem;
+}
+.home-component .home-top .sub-headings {
+  display: flex;
+  justify-content: center;
+}
+.home-component .home-top .sub-headings p {
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  padding: 0.8rem;
+}
+.home-component .home-top .sub-headings .first {
+  border-right: 1px solid black;
+}
+.home-component .home-top .search form {
+  display: flex;
+  justify-content: center;
+}
+.home-component .home-top .search form .search-button {
+  background-color: black;
+  color: white;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  transition: 0.3s ease-in-out;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+.home-component .home-top .search form .search-button:hover {
+  border: 2px solid #2308d2;
+  background-color: #5a4ac0;
+}
+.home-component .home-top .search form .search-button:hover button {
+  background-color: #5a4ac0;
+}
+.home-component .home-top .search form .search-button button {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.home-component .home-top .search form .select select {
+  padding: 0.8rem;
+  border-radius: 0;
+}
+.home-component .home-top .search form .middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.home-component .home-top .search form .middle .input {
+  flex: 1;
+}
+.home-component .home-top .search form .middle .input input {
+  padding: 0.8rem;
+  border-radius: 0;
+}
+.home-component .home-top .search form .middle .input input::-moz-placeholder {
+  font-size: 0.8rem;
+}
+.home-component .home-top .search form .middle .input input::placeholder {
+  font-size: 0.8rem;
+}
+.home-component .home-top .search form .middle .recommendations {
+  flex: 1;
+  width: 100%;
+  position: absolute;
+  top: 3.5rem;
+  z-index: 500 !important;
+}
+.home-component .home-top .search form .middle .recommendations ul {
+  list-style: none;
+  width: 100%;
+  padding: none;
+}
+.home-component .home-top .search form .middle .recommendations ul li {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.511);
+  width: 100%;
+  padding: 0.2rem 0;
+  color: rgba(57, 56, 56, 0.89);
+}
+.home-component .home-top .property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+.home-component .home-top .property p {
+  margin: 20rem 0 0 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+.home-component .home-top .property p::after {
+  content: "";
+  width: 8rem;
+  height: 1px;
+  background-color: #342786;
+  display: block;
+  margin: 1rem;
+}
+.home-component .home-top .property p::before {
+  content: "";
+  width: 8rem;
+  height: 1px;
+  background-color: #342786;
+  display: block;
+  margin: 1rem;
+}
+.home-component .home-top .property button {
+  width: 30%;
+  padding: 0.8rem 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.home-component .home-top .property button:hover {
+  border: 2px solid #2308d2;
+  background-color: #5a4ac0;
+}
+.home-component .home-top .property button:hover button {
+  background-color: #5a4ac0;
+}
+.home-component .home-bottom {
+  margin: 80vh 0 4rem 0;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+.home-component .home-bottom .benefits-container .heading p {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.home-component .home-bottom .benefits-container .benefits {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.home-component .home-bottom .benefits-container .benefits > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  border: 1px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+.home-component .home-bottom .benefits-container .benefits > div:hover {
+  border: 1px solid rgba(0, 8, 255, 0.71);
+}
+.home-component .home-bottom .benefits-container .benefits > div i {
+  font-size: 6rem;
+}
+.home-component .home-bottom .benefits-container .benefits > div div {
+  margin: 4rem 0 0 0;
+}
+.home-component .home-bottom .benefits-container .benefits > div div .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .benefits-container .benefits > div div .sub-title {
+  font-size: 0.8rem;
+  color: grey;
+}
+.home-component .home-bottom .seller-rated {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.home-component .home-bottom .seller-rated .titles {
+  text-align: center;
+}
+.home-component .home-bottom .seller-rated .titles .top {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+.home-component .home-bottom .seller-rated .titles .bottom {
+  font-size: 1.2rem;
+  color: grey;
+}
+.home-component .home-bottom .seller-rated .main {
+  display: flex;
+  width: 80%;
+  gap: 2rem;
+  align-items: center;
+}
+.home-component .home-bottom .seller-rated .main .left {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .left .left-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .left .left-top .after {
+  display: flex;
+  flex-direction: column;
+}
+.home-component .home-bottom .seller-rated .main .left .left-top .after .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .seller-rated .main .left .left-top .after .description {
+  font-size: 0.6;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+.home-component .home-bottom .seller-rated .main .left .left-top::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  background-color: #342786;
+}
+.home-component .home-bottom .seller-rated .main .left .left-bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .left .left-bottom .after {
+  display: flex;
+  flex-direction: column;
+}
+.home-component .home-bottom .seller-rated .main .left .left-bottom .after .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .seller-rated .main .left .left-bottom .after .description {
+  font-size: 0.6;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+.home-component .home-bottom .seller-rated .main .left .left-bottom::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  background-color: #342786;
+}
+.home-component .home-bottom .seller-rated .main .middle {
+  transition: opacity 0.5s ease-in-out;
+}
+.home-component .home-bottom .seller-rated .main .fade {
+  opacity: 0;
+}
+.home-component .home-bottom .seller-rated .main .right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .right div .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .seller-rated .main .right div .description {
+  font-size: 0.6;
+  color: grey;
+}
+.home-component .home-bottom .seller-rated .main .right .right-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .right .right-top .after {
+  display: flex;
+  flex-direction: column;
+}
+.home-component .home-bottom .seller-rated .main .right .right-top .after .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .seller-rated .main .right .right-top .after .description {
+  font-size: 0.6;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+.home-component .home-bottom .seller-rated .main .right .right-top::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  background-color: #342786;
+}
+.home-component .home-bottom .seller-rated .main .right .right-bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home-component .home-bottom .seller-rated .main .right .right-bottom .after {
+  display: flex;
+  flex-direction: column;
+}
+.home-component .home-bottom .seller-rated .main .right .right-bottom .after .title {
+  font-size: 1.2rem;
+}
+.home-component .home-bottom .seller-rated .main .right .right-bottom .after .description {
+  font-size: 0.6;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+.home-component .home-bottom .seller-rated .main .right .right-bottom::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  background-color: #342786;
+}
+.home-component .home-bottom .car-moving {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.home-component .home-bottom .car-moving .titles {
+  text-align: center;
+}
+.home-component .home-bottom .car-moving .titles .top {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+.home-component .home-bottom .car-moving .titles .bottom {
+  font-size: 1.2rem;
+  color: grey;
+}
+.home-component .home-bottom .car-moving .car .car-body {
+  width: 60vw;
+}
+
+:host {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    display: none;
+  }
+  .home-top {
+    flex-direction: column;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .home-top .heading {
+    font-size: 1.2rem !important;
+  }
+  .home-top .sub-headings > p {
+    font-size: 0.6rem !important;
+  }
+  .home-top .search form {
+    padding: 0 0.5rem;
+    flex-direction: column;
+  }
+  .home-top .search form .search-button button {
+    padding: 0.5rem;
+  }
+  .home-top .search form .middle {
+    order: 1;
+    margin-top: 1rem;
+  }
+  .home-top .search form .select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .home-top .property {
+    display: none !important;
+  }
+  .home-bottom {
+    margin: 0 !important;
+    padding: 1rem !important;
+  }
+  .home-bottom .benefits-container .heading p {
+    font-size: 1.5rem !important;
+  }
+  .home-bottom .benefits-container .benefits {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .home-bottom .seller-rated {
+    display: none !important;
+  }
+  .home-bottom .seller-rated .titles .top {
+    font-size: 1.5rem !important;
+  }
+  .home-bottom .seller-rated .titles .bottom {
+    font-size: 1rem !important;
+  }
+  .home-bottom .seller-rated .main div div div .title {
+    font-size: 0.8rem !important;
+  }
+  .home-bottom .seller-rated .main div div div .description {
+    font-size: 0.6rem !important;
+  }
+  .home-bottom .seller-rated .main .middle img {
+    height: 50px;
+    width: 50px;
+  }
+  .home-bottom .seller-rated .main .fade {
+    opacity: 1;
+  }
+  .home-bottom .seller-rated .main .right div .title {
+    font-size: 1rem;
+  }
+  .home-bottom .seller-rated .main .right div .description {
+    font-size: 0.8rem;
+  }
+  .home-bottom .car-moving .titles .top {
+    font-size: 1.5rem !important;
+  }
+  .home-bottom .car-moving .titles .bottom {
+    font-size: 0.8rem !important;
+  }
+  .home-bottom .car-moving .car .car-body {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-component {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+  .home-component .image {
+    display: none;
+  }
+  .home-component .home-top .property p {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  .home-component .home-top .property button {
+    width: 100%;
+  }
+  .home-component .home-bottom {
+    padding: 0 1rem !important;
+  }
+  .home-component .home-bottom .benefits-container .benefits {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .home-component .home-bottom .seller-rated .main .middle {
+    display: none;
+  }
+  .home-component .home-bottom .seller-rated .main .fade {
+    opacity: 1;
+  }
+  .home-component .home-bottom .seller-rated .main .right div .title {
+    font-size: 1rem;
+  }
+  .home-component .home-bottom .seller-rated .main .right div .description {
+    font-size: 0.8rem;
+  }
+  .home-component .home-bottom .car-moving .car .car-body {
+    width: 100%;
+  }
+}/*# sourceMappingURL=home.component.css.map */

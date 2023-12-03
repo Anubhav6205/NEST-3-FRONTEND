@@ -1,0 +1,63 @@
+<div class="appointment-container">
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input (dateChange)="handleAppointmentDate($event)"
+           [matDatepicker]="picker"
+           matInput />
+
+    <mat-datepicker-toggle [for]="picker" matIconSuffix></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div class="slot-container ">
+    <h3>Time Slots</h3>
+
+    <div class="slots">
+      <div class="morning-container">
+        <h4>Morning</h4>
+        <div class="morning">
+          <button (click)="handleAppointmentTime(slot)"
+                  *ngFor="let slot of morningSlots"
+                  [class.active]="slot === activeTimeSlot"
+                  >
+            {{ slot }}
+          </button>
+        </div>
+      </div>
+
+      <div class="afternoon-container">
+        <h4>Afternoon</h4>
+        <div class="afternoon">
+          <button (click)="handleAppointmentTime(slot)"
+                  *ngFor="let slot of afternoonSlots"
+                  [class.active]="slot === activeTimeSlot"
+                 >
+            {{ slot }}
+          </button>
+        </div>
+      </div>
+
+      <div class="evening-container">
+        <h4>Evening</h4>
+        <div class="evening">
+          <button (click)="handleAppointmentTime(slot)"
+                  *ngFor="let slot of eveningSlots"
+                  [class.active]="slot === activeTimeSlot"
+                 >
+            {{ slot }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="handleSubmitAppointment()">Set Appointment</button>
+</div>
+
+
+
+<app-toast 
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage">
+</app-toast>

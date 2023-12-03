@@ -1,0 +1,28 @@
+<div (click)="handleNavigateBack()"
+     [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#181818',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+   
+  }"
+     class="arrow">
+    <i class="fa-solid fa-arrow-left"></i>
+</div>
+<div [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818','color':themeService.currentTheme==='light'?'black':'white'}"
+     *ngIf="landlordProperties && landlordProperties.length>0; else noProperties"
+     class="list-properties-container">
+    <div class="count">
+        You have posted {{landlordProperties.length}} {{landlordProperties.length===1 ? "Property":"Properties"}}
+    </div>
+    <div class="cards">
+        <div *ngFor="let property of landlordProperties">
+            <app-card-landlord-property [property]="property">
+            </app-card-landlord-property>
+        </div>
+    </div>
+</div>
+<ng-template #noProperties>
+    <div class="no-properties">
+        <i class="fa-solid fa-face-meh"></i>
+        <p>No Properties</p>
+    </div>
+</ng-template>

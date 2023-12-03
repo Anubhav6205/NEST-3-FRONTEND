@@ -1,0 +1,166 @@
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+.appointment-container mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.appointment-container mat-form-field button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.appointment-container mat-form-field button:hover {
+  background-color: #1565C0;
+}
+.appointment-container .slot-container {
+  width: 100%;
+}
+.appointment-container .slot-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.appointment-container .slot-container .slots {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.appointment-container .slot-container .slots .morning-container,
+.appointment-container .slot-container .slots .afternoon-container,
+.appointment-container .slot-container .slots .evening-container {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+.appointment-container .slot-container .slots .morning-container h4,
+.appointment-container .slot-container .slots .afternoon-container h4,
+.appointment-container .slot-container .slots .evening-container h4 {
+  margin-bottom: 10px;
+}
+.appointment-container .slot-container .slots .morning-container .morning,
+.appointment-container .slot-container .slots .morning-container .afternoon,
+.appointment-container .slot-container .slots .morning-container .evening,
+.appointment-container .slot-container .slots .afternoon-container .morning,
+.appointment-container .slot-container .slots .afternoon-container .afternoon,
+.appointment-container .slot-container .slots .afternoon-container .evening,
+.appointment-container .slot-container .slots .evening-container .morning,
+.appointment-container .slot-container .slots .evening-container .afternoon,
+.appointment-container .slot-container .slots .evening-container .evening {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.appointment-container .slot-container .slots .morning-container .morning button,
+.appointment-container .slot-container .slots .morning-container .afternoon button,
+.appointment-container .slot-container .slots .morning-container .evening button,
+.appointment-container .slot-container .slots .afternoon-container .morning button,
+.appointment-container .slot-container .slots .afternoon-container .afternoon button,
+.appointment-container .slot-container .slots .afternoon-container .evening button,
+.appointment-container .slot-container .slots .evening-container .morning button,
+.appointment-container .slot-container .slots .evening-container .afternoon button,
+.appointment-container .slot-container .slots .evening-container .evening button {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  border-radius: 0.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.52rem;
+}
+.appointment-container .slot-container .slots .morning-container .morning button.active,
+.appointment-container .slot-container .slots .morning-container .afternoon button.active,
+.appointment-container .slot-container .slots .morning-container .evening button.active,
+.appointment-container .slot-container .slots .afternoon-container .morning button.active,
+.appointment-container .slot-container .slots .afternoon-container .afternoon button.active,
+.appointment-container .slot-container .slots .afternoon-container .evening button.active,
+.appointment-container .slot-container .slots .evening-container .morning button.active,
+.appointment-container .slot-container .slots .evening-container .afternoon button.active,
+.appointment-container .slot-container .slots .evening-container .evening button.active {
+  background-color: #4a2fd3;
+  color: #fff;
+}
+.appointment-container .slot-container .slots .morning-container .morning button:hover,
+.appointment-container .slot-container .slots .morning-container .afternoon button:hover,
+.appointment-container .slot-container .slots .morning-container .evening button:hover,
+.appointment-container .slot-container .slots .afternoon-container .morning button:hover,
+.appointment-container .slot-container .slots .afternoon-container .afternoon button:hover,
+.appointment-container .slot-container .slots .afternoon-container .evening button:hover,
+.appointment-container .slot-container .slots .evening-container .morning button:hover,
+.appointment-container .slot-container .slots .evening-container .afternoon button:hover,
+.appointment-container .slot-container .slots .evening-container .evening button:hover {
+  color: black;
+  background-color: rgba(131, 128, 218, 0.253);
+}
+.appointment-container button {
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.appointment-container button:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 900px) {
+  .appointment-container {
+    width: 100%;
+    overflow-y: auto;
+  }
+  .appointment-container mat-form-field {
+    width: 80%;
+  }
+  .appointment-container mat-form-field button {
+    width: 80%;
+  }
+  .appointment-container .slot-container {
+    width: 100%;
+  }
+  .appointment-container .slot-container .slots {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .appointment-container .slot-container .slots .morning-container,
+  .appointment-container .slot-container .slots .afternoon-container,
+  .appointment-container .slot-container .slots .evening-container {
+    margin: 0;
+  }
+  .appointment-container .slot-container .slots .morning-container .morning,
+  .appointment-container .slot-container .slots .morning-container .afternoon,
+  .appointment-container .slot-container .slots .morning-container .evening,
+  .appointment-container .slot-container .slots .afternoon-container .morning,
+  .appointment-container .slot-container .slots .afternoon-container .afternoon,
+  .appointment-container .slot-container .slots .afternoon-container .evening,
+  .appointment-container .slot-container .slots .evening-container .morning,
+  .appointment-container .slot-container .slots .evening-container .afternoon,
+  .appointment-container .slot-container .slots .evening-container .evening {
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .appointment-container .slot-container .slots .morning-container .morning button,
+  .appointment-container .slot-container .slots .morning-container .afternoon button,
+  .appointment-container .slot-container .slots .morning-container .evening button,
+  .appointment-container .slot-container .slots .afternoon-container .morning button,
+  .appointment-container .slot-container .slots .afternoon-container .afternoon button,
+  .appointment-container .slot-container .slots .afternoon-container .evening button,
+  .appointment-container .slot-container .slots .evening-container .morning button,
+  .appointment-container .slot-container .slots .evening-container .afternoon button,
+  .appointment-container .slot-container .slots .evening-container .evening button {
+    width: 80%;
+  }
+  .appointment-container button {
+    width: 80%;
+  }
+}/*# sourceMappingURL=appointment.component.css.map */

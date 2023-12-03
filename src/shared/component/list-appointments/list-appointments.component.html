@@ -1,0 +1,25 @@
+<div (click)="handleNavigateBack()" class="arrow" [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#181818',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+   
+  }">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+<div *ngIf="appointmentsPresent; else noAppointments"
+     class="list-appointment-container" [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818','color':themeService.currentTheme==='light'?'black':'white'}">
+    
+    <p class="heading">Appointments</p>
+    <div class="cards">
+        <div *ngFor="let appointment of appointmentData;let i= index">
+            <app-card-appointment [appointment]="appointment"></app-card-appointment>
+        </div>
+    </div>
+</div>
+
+<ng-template #noAppointments>
+   
+    <div class="no-appointments">
+        <i class="fa-solid fa-face-meh"></i>
+        <p>No Appointments</p>
+    </div>
+</ng-template>

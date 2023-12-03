@@ -1,0 +1,172 @@
+.signup-container {
+    width: 70vw;
+    height: 90vh;
+
+    display: flex;
+    small{
+        font-size: .6rem;
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .signup-right {
+            display: none !important;
+        }
+
+
+        .signup-left {
+
+            width: 100% !important;
+           
+
+            .heading p {
+
+
+                font-size: 2rem !important;
+
+            }
+
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .signup-right {
+            display: none;
+        }
+    }
+
+
+
+    .signup-left {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+
+        .heading {
+            margin: 1rem .5rem 3rem .5rem;
+
+            p {
+                font-size: 3rem;
+                font-weight: bolder;
+
+            }
+
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+
+            height: 80%;
+
+            .inputs {
+                width: 100%;
+
+                .input {
+                    width: 100%;
+                    margin: 0 0 1.5rem 0;
+
+                    input {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.151);
+
+                        &:focus {
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                }
+
+                .image-input label {
+                    display: flex;
+
+                    gap: .5rem;
+
+                    span {
+                        font-size: .8rem;
+
+                    }
+
+                }
+
+
+
+            }
+
+            .submit {
+                button {
+                    border-radius: 2rem;
+                    background-color: black;
+                    padding: .5rem 3rem;
+                    color: white;
+                    transition: .2s ease-in;
+
+                    &:hover {
+
+                        background-color: #4736b1;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+    .signup-right {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 60%;
+        height: 100%;
+
+        img {
+
+            width: 100%;
+            object-fit: contain;
+            z-index: 1;
+
+        }
+    }
+
+    .signup-right::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* Adjusted to apply the gradient only to the right side */
+        width: 60%;
+        /* Adjusted to control the width of the gradient */
+        height: 100%;
+        background: linear-gradient(to left, rgba(26, 26, 26, 0), rgb(255, 255, 255));
+        z-index: 2;
+        /* Ensure the gradient layer is below the image */
+        pointer-events: none;
+        /* Allow clicking through the gradient layer */
+    }
+}
+
+
+:host::ng-deep .mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-hover-icon-color: #2d2275;
+    --mdc-radio-selected-icon-color: #4736b1;
+    --mat-radio-checked-ripple-color: #6554d3;
+}

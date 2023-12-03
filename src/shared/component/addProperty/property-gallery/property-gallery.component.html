@@ -1,0 +1,32 @@
+<div class="gallery-container">
+  <form [formGroup]="propertyService.propertyGalleryForm">
+    <div class="titles">
+      <h2>Add Photos</h2>
+    
+    </div>
+    <div class="sub-titles">
+      <p>Photos get 5X more responses.</p>
+      <p>90% tenants contact on properties with photos.</p>
+    </div>
+    
+    <div class="camera-icon">
+      <i class="bi bi-camera"  [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}"></i>
+    </div>
+
+    <form>
+      <label for="gallery">Gallery</label>
+      <input type="file" formControlName="propertyPictures" class="form-control" multiple 
+      (change)="handleAddPictures($event)" />
+    </form>
+    
+    <button (click)="handleAddProperty()" class="add-photos-button">Enlist Property</button>
+  </form>
+</div>
+
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

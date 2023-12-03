@@ -1,0 +1,127 @@
+.list-appointment-container {
+
+
+  padding: 0.1vw 2vw;
+  min-height: 100vh;
+  font-family: 'Jost', sans-serif;
+  transition: .5s ease-in-out;
+
+  .arrow {
+    padding: 1rem 0 0 0;
+    transition: .5s ease-in-out;
+    
+
+
+    &:hover {
+      color: #2b199f;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+
+  }
+
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+
+
+
+.no-appointments {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jost', sans-serif;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    font-size: 2rem;
+  }
+
+  i {
+    font-size: 3rem;
+    animation: rotate infinite 5s;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .no-appointments {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .no-appointments p {
+    font-size: 1rem;
+  }
+
+  .no-appointments i {
+    font-size: 2rem;
+    animation: rotate infinite 2s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .list-appointment-container {
+    padding: 2%;
+    min-height: auto;
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .no-appointments {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    i {
+      font-size: 2rem;
+      animation: rotate infinite 2s;
+    }
+  }
+}
+
+
+
+.arrow{
+  padding:1rem;
+  transition: .5s ease-in-out;
+  &:hover{
+    color:#4636b116; 
+  }
+}

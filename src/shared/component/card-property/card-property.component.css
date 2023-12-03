@@ -1,0 +1,172 @@
+.card-property-container {
+  padding: 1rem 0.5rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+.card-property-container:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card-property-container .card-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+.card-property-container .card-top .top-left .image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.card-property-container .card-top .top-left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+  transition: 0.2s ease-in-out;
+}
+.card-property-container .card-top .top-left .image img:hover {
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.card-property-container .card-top .top-left .image button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.258);
+  z-index: 1;
+}
+.card-property-container .card-top .top-left .image .prev {
+  left: 5px;
+}
+.card-property-container .card-top .top-left .image .next {
+  right: 5px;
+}
+.card-property-container .card-top .top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-property-container .card-top .top-right p {
+  margin: 0;
+}
+.card-property-container .card-top .top-right .bold {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.card-property-container .card-top .top-right .top {
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 1rem 0;
+}
+.card-property-container .card-top .top-right .top .title span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-property-container .card-top .top-right .top .sub-title {
+  color: grey;
+  font-size: 0.6rem;
+}
+.card-property-container .card-top .top-right .middle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 1rem 0;
+}
+.card-property-container .card-top .top-right .middle > div .label {
+  color: grey;
+  font-size: 0.7rem;
+}
+.card-property-container .card-top .top-right .bottom {
+  display: flex;
+  font-size: 0.8rem;
+}
+.card-property-container .card-top .top-right .bottom .facing {
+  border-right: 1px solid #ccc;
+  padding: 0 1rem 0 0;
+}
+.card-property-container .card-top .top-right .bottom .age {
+  padding: 0 0 0 1rem;
+}
+.card-property-container .card-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+.card-property-container .card-bottom div button {
+  width: 90%;
+  padding: 0.4rem 0;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.card-property-container .card-bottom div button:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+@media screen and (max-width: 900px) {
+  .card-property-container {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .card-property-container .card-top {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .card-property-container .card-top .top-left .image {
+    height: 150px;
+  }
+  .card-property-container .card-top .top-right p {
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+  }
+  .card-property-container .card-top .top-right .bold {
+    font-size: 0.9rem;
+  }
+  .card-property-container .card-top .top-right .top {
+    padding: 0 0 0.5rem 0;
+  }
+  .card-property-container .card-top .top-right .top .title span {
+    font-size: 1rem;
+  }
+  .card-property-container .card-top .top-right .top .sub-title {
+    font-size: 0.5rem;
+  }
+  .card-property-container .card-top .top-right .middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0 0 0.5rem 0;
+  }
+  .card-property-container .card-top .top-right .middle > div .value {
+    font-size: 0.7rem;
+  }
+  .card-property-container .card-top .top-right .middle > div .label {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
+  .card-property-container .card-top .top-right .bottom {
+    display: flex;
+    font-size: 0.7rem;
+  }
+  .card-property-container .card-top .top-right .bottom .facing,
+  .card-property-container .card-top .top-right .bottom .age {
+    padding: 0 0.5rem;
+  }
+  .card-property-container .card-bottom {
+    grid-template-columns: 1fr;
+    margin: 0.5rem 0 0 0;
+  }
+  .card-property-container .card-bottom div button {
+    width: 100%;
+    padding: 0.4rem 0;
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=card-property.component.css.map */

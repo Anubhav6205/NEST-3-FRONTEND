@@ -1,0 +1,135 @@
+i {
+  padding: 1rem 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  height: 40px;
+}
+
+.current {
+  transform: translateX(0px);
+  transition: 1s ease-in-out;
+}
+
+.slide-in {
+  transform: translateX(-90px);
+  transition: 1s ease-in-out;
+}
+
+.receipt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.receipt-sub-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem;
+  height: 90vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.receipt-header {
+  text-align: center;
+}
+.receipt-header h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+.receipt-header p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.receipt-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.receipt-details .property-details,
+.receipt-details .bill-to {
+  flex: 1;
+}
+.receipt-details .property-details h3,
+.receipt-details .bill-to h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.receipt-details .property-details p,
+.receipt-details .bill-to p {
+  margin: 0.3rem 0;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.dates .invoice-date,
+.dates .due-date {
+  flex: 1;
+}
+.dates .invoice-date h3,
+.dates .due-date h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.dates .invoice-date p,
+.dates .due-date p {
+  margin: 0.3rem 0;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.payment-details {
+  margin-top: 1.5rem;
+}
+.payment-details h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.payment-details .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.payment-details .table th, .payment-details .table td {
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.payment-details .table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.terms {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.terms .heading {
+  font-size: 0.7rem;
+  padding: 0;
+}
+.terms .condition {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .receipt-sub-container {
+    width: 80vw;
+  }
+  .receipt-details {
+    margin-top: 1rem;
+  }
+  .terms {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=payment-success.component.css.map */

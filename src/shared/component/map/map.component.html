@@ -1,0 +1,13 @@
+<google-map
+  width="100vw"
+  height="400px"
+  [center]=" coordiantes "
+  [zoom]="zoom"
+  [ngClass]=" (themeService.currentTheme === 'light' ? '' : 'map')"
+
+>
+  <map-marker
+    [position]="coordiantes"
+    title="Hyderabad, India"
+  ></map-marker>
+</google-map>

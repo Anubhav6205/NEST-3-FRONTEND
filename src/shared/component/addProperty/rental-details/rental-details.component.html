@@ -1,0 +1,38 @@
+<div class="property-rental-container">
+  <form [formGroup]="propertyService.rentalDetailsForm">
+    <div class="column-1">
+      <div class="mb-3">
+        <label for="expectedRent">Expected Rent</label>
+        <input formControlName="expectedRent" id="expectedRent" type="number" />
+      </div>
+    </div>
+
+    <div class="column-2">
+      <div class="mb-3">
+        <label for="furnishing">Furnishing</label>
+        <select formControlName="furnishing">
+          <option value>Select a furnishing type</option>
+          <option *ngFor="let furnishing of furnishTypes"
+                  value="{{ furnishing.value }}">
+            {{ furnishing.label }}
+          </option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="parking">Parking</label>
+        <select formControlName="parking">
+          <option value>Select a parking option</option>
+          <option *ngFor="let parkingOption of parkingOptions"
+                  value="{{ parkingOption.value }}">
+            {{ parkingOption.label }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <button (click)="handleRouteToGallery()" >
+      Submit
+    </button>
+  </form>
+</div>

@@ -1,0 +1,98 @@
+.login-container {
+  width: 60vw;
+  height: 62vh;
+  display: flex;
+}
+.login-container .login-left {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.login-container .login-left .login-top {
+  height: 70%;
+  width: 100%;
+}
+.login-container .login-left .login-top .heading {
+  margin: 1rem 0.5rem 3rem 0.5rem;
+}
+.login-container .login-left .login-top .heading p {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.login-container .login-left .login-top .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+.login-container .login-left .login-top .login-form .inputs .input {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.login-container .login-left .login-top .login-form .inputs .input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.151);
+}
+.login-container .login-left .login-top .login-form .inputs .input input:focus {
+  border-bottom: 2px solid black;
+}
+.login-container .login-left .login-top .login-form .submit button {
+  border-radius: 2rem;
+  background-color: black;
+  padding: 0.5rem 3rem;
+  color: white;
+  transition: 0.2s ease-in;
+}
+.login-container .login-left .login-top .login-form .submit button:hover {
+  background-color: #4736b1;
+}
+.login-container .login-left .login-top .login-form .remember-me {
+  display: flex;
+  align-items: center;
+}
+.login-container .login-left .login-top .login-form .remember-me input {
+  margin-right: 8px;
+}
+.login-container .login-left .login-top .login-form .remember-me input:checked {
+  accent-color: black;
+}
+.login-container .login-left .login-bottom .signup a {
+  color: black;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.login-container .login-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+.login-container .login-right img {
+  width: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+.login-container .login-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Adjusted to apply the gradient only to the right side */
+  width: 50%;
+  /* Adjusted to control the width of the gradient */
+  height: 100%;
+  background: linear-gradient(to left, rgba(26, 26, 26, 0), white);
+  z-index: 2;
+  /* Ensure the gradient layer is below the image */
+  pointer-events: none;
+  /* Allow clicking through the gradient layer */
+}

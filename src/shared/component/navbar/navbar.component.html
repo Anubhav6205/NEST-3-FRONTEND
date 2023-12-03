@@ -1,0 +1,110 @@
+<nav [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818'}"
+     class="navbar-container">
+  <div class="nav-left">
+    <img (click)="handleNavigateToOption('home')"
+         (keyup)="handleNavigateToOption('home')"
+         [src]="themeService.currentTheme === 'light' ? '../../../assets/logo.png' : '../../../assets/logo-white.png'"
+         alt
+         tabindex="0" />
+  </div>
+
+  <div [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}"
+       class="nav-right">
+    <div (click)="handleNavigateToOption('conversations')"
+         (keyup)="handleNavigateToOption('home')"
+         [class.active]="currentActiveOption==='conversations'"
+         class="my-conversations"
+         tabindex="1">
+      <i class="bi bi-chat-left-text"></i>
+      <a [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}">
+        My Conversations
+      </a>
+    </div>
+    <div (click)="handleNavigateToOption('appointments')"
+         (keyup)="handleNavigateToOption('home')"
+         [class.active]="currentActiveOption==='appointments'"
+         class="my-appointments"
+         tabindex="2">
+      <i class="bi bi-calendar-event"></i>
+      <a [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}">
+        My Appointments
+      </a>
+    </div>
+    <div (click)="handleNavigateToOption('property')"
+         (keyup)="handleNavigateToOption('home')"
+         [class.active]="currentActiveOption==='property'"
+         *ngIf="role==='landlord'"
+         class="add-property"
+         routerLink="enlistProperty"
+         tabindex="3">
+         <i class="bi bi-house-add-fill"></i>
+      <a [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}">
+        Add Property
+      </a>
+    </div>
+    <div *ngIf="userExists===true" class="profile">
+      <div class="image">
+        <img [src]="profilePicture" alt />
+      </div>
+      <div class="name">{{userData.firstName}} {{userData.lastName}}</div>
+    </div>
+    <div (click)="openDialog('signup')"
+         (keyup)="handleNavigateToOption('home')"
+         *ngIf="userExists===false"
+         class="signup"
+         tabindex="4">
+      <i class="bi bi-person-add"></i>
+      <a [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}">
+        Sign Up
+      </a>
+    </div>
+    <div (click)="openDialog('login')"
+         (keyup)="handleNavigateToOption('home')"
+         *ngIf="userExists===false"
+         class="login"
+         tabindex="5">
+      <i class="bi bi-box-arrow-in-right"></i>
+      <a [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}">
+        Log In
+      </a>
+    </div>
+    <div (click)="handleThemeToggle()"
+         (keyup)="handleNavigateToOption('home')"
+         [ngStyle]="{'borderColor':themeService.currentTheme==='light'?'black':'white'}"
+         class="mode"
+         tabindex="6">
+      <i *ngIf="themeService.currentTheme!=='light'"
+         class="fa-regular fa-sun sun">
+      </i>
+      <i *ngIf="themeService.currentTheme==='light'"
+         class="fa-regular fa-moon moon">
+      </i>
+    </div>
+    <div class="menu" [matMenuTriggerFor]="menu">
+      <i class="bi bi-list"></i>
+      <a 
+         [ngClass]="{'light-theme': themeService.currentTheme === 'light', 'dark-theme': themeService.currentTheme !== 'light'}"
+         class="menu-button">
+        Menu
+      </a>
+      <mat-menu #menu="matMenu" class="dropdown"    [class.active]="currentActiveOption==='menu'">
+        <ng-container *ngFor="let option of options">
+          <button (click)="handleNavigateToOption(option.value)"
+                  *ngIf="shouldShowOption(option)"
+                  mat-menu-item>
+            <div *ngIf="shouldShowOption(option)">
+              <span>{{ option.label }}</span>
+            </div>
+          </button>
+        </ng-container>
+      </mat-menu>
+    </div>
+  </div>
+</nav>
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

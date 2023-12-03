@@ -1,0 +1,102 @@
+<!-- component1.component.html -->
+<div class="property-details-container" [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818','color':themeService.currentTheme==='light'?'black':'white'}">
+  <form [formGroup]="propertyService.propertyDetailsForm">
+    <div class="column-1">
+      <div class="mb-3">
+        <label for="city">City</label>
+        <select (change)="handleLocalityChange($event)"
+                formControlName="city"
+                id="city">
+          <option value>Select a city</option>
+
+          <option [value]="location" *ngFor="let location of locations">
+            {{location}}
+          </option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="locality">Locality</label>
+        <select formControlName="locality" id="locality">
+          <option value>Select a locality</option>
+          <option [value]="locality" *ngFor="let locality of localities">
+            {{locality}}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="column-2">
+      <div class="mb-3">
+        <label for="name">Name of property</label>
+        <input formControlName="name" type="text" />
+      </div>
+
+      <div class="column-22">
+        <div class="mb-3">
+          <label for="apartmentType">Apartment Type</label>
+          <select formControlName="apartmentType">
+            <option value>Select an apartment type</option>
+
+            <option [value]=" apartmentType "
+                    *ngFor="let apartmentType of apartmentTypes">
+              {{ apartmentType }}
+            </option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="bhkType">BHK Type</label>
+          <select formControlName="bhkType" id="bhkType">
+            <option value>Select a BHK</option>
+            <option [value]="bhkType.value" *ngFor="let bhkType of bhkTypes">
+              {{bhkType.label}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+      <div class="column-3">
+        <div class="mb-3">
+          <label for="floor">Floor</label>
+          <select formControlName="floor">
+            <option value>Select a floor</option>
+
+            <option [value]=" floor " *ngFor="let floor of floors">
+              {{ floor }}
+            </option>
+          </select>
+        </div>
+
+        <div class="column-32">
+          <div class="mb-3">
+            <label for="propertyAge">Property Age</label>
+            <select formControlName="propertyAge">
+              <option value>Select a floor</option>
+
+              <option [value]=" propertyAge.value "
+                      *ngFor="let propertyAge of propertyAges">
+                {{ propertyAge.label }}
+              </option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="facingDirection">Facing Direction</label>
+            <select formControlName="facingDirection">
+              <option value>Select a facing direction</option>
+
+              <option *ngFor="let facingDirection of facingDirections"
+                      value="{{ facingDirection }}">
+                {{ facingDirection }}
+              </option>
+            </select>
+          </div>
+        </div>
+
+    </div>
+
+    <button (click)="handleRouteToRental()">
+      Submit
+    </button>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<div (click)="handleNavigateBack()" class="arrow" [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#181818',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+   
+  }">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+<div *ngIf="notifications.length>0 ;else noNotifications"
+     class="list-notifications-container"  [ngStyle]="{
+        'backgroundColor': themeService.currentTheme === 'light' ? 'white' : 'black',
+        'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+
+      }">
+         
+    <p class="heading" [matBadge]="notifications.length" matBadgeOverlap="false">Notifications</p>
+    <div class="cards">
+        <div *ngFor="let notification of notifications;let i= index">
+            <app-card-notifications [notification]="notification">
+            </app-card-notifications>
+        </div>
+    </div>
+</div>
+
+<ng-template #noNotifications>
+   
+    <div class="no-notifications">
+        <i class="fa-solid fa-face-meh"></i>
+        <p>No Notifications</p>
+    </div>
+</ng-template>

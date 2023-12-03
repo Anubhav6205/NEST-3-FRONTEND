@@ -1,0 +1,62 @@
+<div class="card-property-container " data-aos="fade-up" data-aos-delay="200">
+    <div class="card-top">
+        <div class="top-left">
+            <div class="image">
+              <button class="prev" (click)="handlePrev()"><i class="bi bi-caret-left"></i></button>
+              <img [src]="propertyData.propertyGallery?.[currentIndex]" alt />
+              <button class="next" (click)="handleNext()"><i class="bi bi-caret-right"></i></button>
+            </div>
+          </div>
+        <div (click)="handleOpenDetail()" class="top-right" >
+            <div class="top">
+                <div class="title">
+                    <span>{{propertyData.propertyDetails?.name}}</span>
+                    , {{handleGetBhkType(propertyData.propertyDetails?.bhkType)}} {{propertyData.propertyDetails?.apartmentType}}
+                </div>
+                <div class="sub-title">
+                    {{propertyData.propertyDetails?.locality}}, {{propertyData.propertyDetails?.city}}
+                </div>
+            </div>
+            <div class="middle">
+                <div class="rent-container">
+                    <p class="rent bold value"><sup>₹</sup>{{propertyData.rentalDetails?.expectedRent}}</p>
+                    <p class="label">
+                        Rent
+                    </p>
+                    
+                </div>
+                <div class="parking-container">
+                    <p class="parking bold value">{{handleParking(propertyData.rentalDetails?.parking)}}</p>
+                    <p class="label">Parking</p>
+                </div>
+                <div class="furnish-container">
+                    <p class="furnish bold value ">
+                        {{handleFurnishing(propertyData.rentalDetails?.furnishing)}}
+                    </p>
+                    <p class="label">Status</p>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="facing"><p>Facing {{propertyData.propertyDetails?.facingDirection}}</p></div>
+                <div class="age"><p>{{handlePropertyAge(propertyData.propertyDetails?.propertyAge)}} Old</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-bottom">
+        <div class="view-phone" (click)="handleGetOwnerDetails()">
+            <button>View Phone</button>
+        </div>
+        <div class="connect-now" (click)="handleChat()">
+            <button>Connect Now</button>
+        </div>
+    </div>
+</div>
+
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

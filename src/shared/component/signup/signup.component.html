@@ -1,0 +1,114 @@
+<div class="signup-container">
+  <div class="signup-left">
+    <div class="heading">
+      <p>
+        Sign Up
+        <span style="color: #3d25d8;">.</span>
+      </p>
+    </div>
+    <form [formGroup]="signupForm" class="signup-form">
+      <div class="inputs">
+        <div class="form-group input">
+          <input formControlName="email" placeholder="Email " type="email" />
+          <small *ngIf="signupForm.controls?.['email']?.errors?.['required']"
+                 class="text-danger">
+            Email address is required
+          </small>
+          <small *ngIf="signupForm.controls?.['email']?.errors?.['email']"
+                 class="text-danger">
+            Enter a valid email
+          </small>
+
+          <small *ngIf="signupForm.controls?.['email']?.errors===null"
+                 class="text-success">
+            Great!
+          </small>
+        </div>
+
+        <div class="form-group input">
+          <input formControlName="password"
+                 placeholder="Password"
+                 type="password" />
+          <small *ngIf="signupForm.controls?.['password']?.errors?.['required']"
+                 class="text-danger">
+            Password is required
+          </small>
+
+          <small *ngIf="signupForm.controls?.['password']?.errors===null"
+                 class="text-success">
+            {{passwordRegexValue}}
+          </small>
+        </div>
+        <div class="form-group input">
+          <input formControlName="firstName"
+                 placeholder="First name"
+                 type="text" />
+          <small *ngIf="signupForm.controls?.['firstName']?.errors?.['required']"
+                 class="text-danger">
+            First Name is required
+          </small>
+
+          <small *ngIf="signupForm.controls?.['firstName']?.errors===null"
+                 class="text-success">
+            Great!
+          </small>
+        </div>
+        <div class="form-group input">
+          <input formControlName="lastName"
+                 placeholder="Last name"
+                 type="text" />
+        </div>
+        <div class="form-group input">
+          <input formControlName="contact" placeholder="Contact" type="text" />
+          <small *ngIf="signupForm.controls?.['contact']?.errors?.['required']"
+                 class="text-danger">
+            Contact is required
+          </small>
+          <small *ngIf="signupForm.controls?.['contact']?.errors?.['minlength'] ||signupForm.controls?.['contact']?.errors?.['maxlength']"
+                 class="text-danger">
+            Enter valid contact detail
+          </small>
+          
+
+          <small *ngIf="signupForm.controls?.['contact']?.errors===null"
+                 class="text-success">
+            Great!
+          </small>
+        </div>
+        <div class="form-group">
+          <mat-radio-group formControlName="role">
+            <mat-radio-button value="tenant">Tenant</mat-radio-button>
+            <mat-radio-button value="landlord">Landlord</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="form-group input image-input">
+          <input (change)="handleImageToBase64($event)"
+                 formControlName="profilePicture"
+                 id="fileInput"
+                 style="display: none"
+                 type="file" />
+
+          <label class="file-input-label" for="fileInput">
+            <i class="bi bi-image"></i>
+            <span *ngIf="imageAdded===false">Add Profile image.</span>
+            <span *ngIf="imageAdded">Image added !</span>
+          </label>
+        </div>
+      </div>
+      <div class="submit">
+        <button (click)="handleUserSignup()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="signup-right">
+    <img alt src="../../../assets/signup.png" />
+  </div>
+</div>
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

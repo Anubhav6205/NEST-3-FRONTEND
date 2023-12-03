@@ -1,0 +1,280 @@
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\addProperty\property-gallery\property-gallery.component.ts[24m[0m
+[0m  [2m14:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m15:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m16:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m70:18[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m96:28[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\addProperty\property\property.component.html[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m1:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\appointment\appointment.component.ts[24m[0m
+[0m  [2m23:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m24:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m25:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m26:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m52:28[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m61:39[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m84:23[22m  [33mwarning[39m  'response' is defined but never used                                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\card-appointment\card-appointment.component.ts[24m[0m
+[0m  [2m13:3[22m    [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m24:15[22m   [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m24:45[22m   [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m24:75[22m   [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m24:108[22m  [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\card-landlord-property\card-landlord-property.component.ts[24m[0m
+[0m  [2m12:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m13:3[22m   [31merror[39m    Type number trivially inferred from a number literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m93:32[22m  [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m94:7[22m   [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m99:33[22m  [33mwarning[39m  Forbidden non-null assertion                                                  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\card-property\card-property.component.html[24m[0m
+[0m  [2m10:9[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m10:9[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m47:9[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m47:9[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m50:9[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m50:9[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\card-property\card-property.component.ts[24m[0m
+[0m   [2m8:10[22m  [33mwarning[39m  'Chat' is defined but never used                                                [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m19:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m20:3[22m   [31merror[39m    Type number trivially inferred from a number literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m21:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m22:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m23:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m24:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m33:32[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m34:7[22m   [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m39:33[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m42:25[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m44:26[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\chat\chat.component.html[24m[0m
+[0m   [2m4:13[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m   [2m4:13[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m13:13[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m13:13[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m50:13[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m50:13[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\chat\chat.component.ts[24m[0m
+[0m   [2m20:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m21:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m22:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m23:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m27:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m31:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m32:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m67:70[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m71:28[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m   [2m88:30[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m105:34[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m131:9[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m165:28[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\conversations\conversations.component.html[24m[0m
+[0m   [2m2:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m   [2m2:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m12:5[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m12:5[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\conversations\conversations.component.ts[24m[0m
+[0m   [2m24:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m25:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m26:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m27:59[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m40:63[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m43:47[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m   [2m43:87[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m109:21[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\details\details.component.html[24m[0m
+[0m    [2m1:1[22m   [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m    [2m1:1[22m   [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m137:21[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m137:21[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m145:21[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m145:21[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m169:37[22m  [31merror[39m  <img/> element must have a text alternative                                             [2m@angular-eslint/template/alt-text[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\details\details.component.ts[24m[0m
+[0m   [2m20:23[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m31:48[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m34:3[22m   [31merror[39m    Type number trivially inferred from a number literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m35:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m37:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m38:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m39:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m40:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m72:25[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m   [2m94:25[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m   [2m99:34[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m100:9[22m   [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m101:27[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m113:25[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m118:35[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m119:27[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m156:71[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m417:41[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m421:33[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\home\home.component.html[24m[0m
+[0m  [2m63:33[22m  [31merror[39m  Expected `!==` but received `!=`                                                        [2m@angular-eslint/template/eqeqeq[22m[0m
+[0m  [2m66:29[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m66:29[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m74:17[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m74:17[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\home\home.component.ts[24m[0m
+[0m   [2m23:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m24:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m25:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m26:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m28:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m29:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m213:69[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\list-appointments\list-appointments.component.html[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m1:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\list-appointments\list-appointments.component.ts[24m[0m
+[0m  [2m22:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m35:7[22m   [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m45:33[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\list-notifications\list-notifications.component.html[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m1:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\list-properties\list-properties.component.html[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m1:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\list-properties\list-properties.component.ts[24m[0m
+[0m  [2m28:33[22m  [33mwarning[39m  Forbidden non-null assertion  [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\login\login.component.html[24m[0m
+[0m  [2m41:9[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m41:9[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\login\login.component.ts[24m[0m
+[0m  [2m15:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m16:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m17:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m18:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m47:65[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\map\map.component.ts[24m[0m
+[0m  [2m11:16[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                                                     [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m14:3[22m   [31merror[39m    Unexpected empty constructor                                                                                                 [2m@typescript-eslint/no-empty-function[22m[0m
+[0m  [2m31:3[22m   [33mwarning[39m  Lifecycle interface 'OnDestroy' should be implemented for method 'ngOnDestroy'. (https://angular.io/styleguide#style-09-01)  [2m@angular-eslint/use-lifecycle-interface[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\navbar\navbar.component.ts[24m[0m
+[0m   [2m19:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m20:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m21:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m22:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m23:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m24:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m35:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m231:28[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\profile-edit\profile-edit.component.html[24m[0m
+[0m  [2m2:1[22m  [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m2:1[22m  [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\profile-edit\profile-edit.component.ts[24m[0m
+[0m  [2m17:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m18:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m19:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m62:63[22m  [33mwarning[39m  'response' is defined but never used                                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m62:72[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\search-result\search-result.component.html[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  click must be accompanied by either keyup, keydown or keypress event for accessibility  [2m@angular-eslint/template/click-events-have-key-events[22m[0m
+[0m  [2m1:1[22m   [31merror[39m  Elements with interaction handlers must be focusable                                    [2m@angular-eslint/template/interactive-supports-focus[22m[0m
+[0m  [2m4:13[22m  [31merror[39m  Expected `!==` but received `!=`                                                        [2m@angular-eslint/template/eqeqeq[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\search-result\search-result.component.ts[24m[0m
+[0m  [2m57:18[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m58:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m59:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m60:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m61:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m62:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m63:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\signup\signup.component.ts[24m[0m
+[0m  [2m14:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m15:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m16:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m17:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m19:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m45:30[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\component\toast\toast.component.ts[24m[0m
+[0m  [2m10:3[22m  [31merror[39m  Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m11:3[22m  [31merror[39m  Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m14:3[22m  [31merror[39m  Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m15:3[22m  [31merror[39m  Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m16:3[22m  [31merror[39m  Type number trivially inferred from a number literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m17:3[22m  [31merror[39m  Type number trivially inferred from a number literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\service\chat\chat.service.ts[24m[0m
+[0m   [2m9:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m19:41[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m20:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m29:40[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m30:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m40:59[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m44:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                      [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\service\property\property.service.ts[24m[0m
+[0m   [2m24:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation            [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m74:53[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m99:3[22m   [31merror[39m    Angular will not invoke the `ngOnInit` lifecycle method within `@Injectable()` classes  [2m@angular-eslint/contextual-lifecycle[22m[0m
+[0m  [2m124:36[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m170:17[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m186:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m194:37[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m195:26[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m198:47[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m204:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m215:62[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m216:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\service\theme\theme.service.ts[24m[0m
+[0m  [2m7:3[22m   [31merror[39m  Type string trivially inferred from a string literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m  [2m9:17[22m  [31merror[39m  Unexpected empty constructor                                                  [2m@typescript-eslint/no-empty-function[22m[0m
+[0m[0m
+[0m[4mC:\Users\ANGUPT6\Documents\Chubb\Capstone\Client\src\shared\service\user\user.service.ts[24m[0m
+[0m   [2m13:3[22m   [31merror[39m    Type string trivially inferred from a string literal, remove type annotation    [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m16:3[22m   [31merror[39m    Type boolean trivially inferred from a boolean literal, remove type annotation  [2m@typescript-eslint/no-inferrable-types[22m[0m
+[0m   [2m37:7[22m   [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m   [2m74:44[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m77:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m86:43[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m90:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m100:30[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m102:27[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m172:22[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m185:59[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m191:26[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m209:75[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m210:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m223:44[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m225:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m234:47[22m  [33mwarning[39m  Forbidden non-null assertion                                                    [2m@typescript-eslint/no-non-null-assertion[22m[0m
+[0m  [2m244:45[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m248:27[22m  [33mwarning[39m  Unexpected any. Specify a different type                                        [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[31m[1m✖ 208 problems (122 errors, 86 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[31m[1m  77 errors and 0 warnings potentially fixable with the `--fix` option.[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

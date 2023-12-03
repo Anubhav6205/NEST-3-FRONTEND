@@ -1,0 +1,36 @@
+.landlord-details-component {
+  height: 450px;
+  width: 300px;
+  position: relative;
+}
+.landlord-details-component .top {
+  height: 50%;
+}
+.landlord-details-component .top .red {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landlord-details-component .top .white {
+  height: 10%;
+}
+.landlord-details-component .top img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.landlord-details-component .bottom .title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.landlord-details-component .bottom .subtitles {
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}/*# sourceMappingURL=landlord-details.component.css.map */

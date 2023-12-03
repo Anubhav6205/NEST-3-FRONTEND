@@ -1,0 +1,69 @@
+<div  class="print current" [ngClass]="{'slide-in':printOptions}">
+    <i class="bi bi-filetype-jpg" (click)="downloadAsJpg()"></i>
+
+    <i class="fa-regular fa-file-pdf" (click)="downloadAsPdf()"></i>
+
+    <i *ngIf="!printOptions" class="fa-solid fa-xmark" (click)="printOptions=!printOptions"></i>
+    <i *ngIf="printOptions" class="fa-solid fa-print" (click)="printOptions=!printOptions"></i>
+</div>
+<div class="receipt-container">
+    <div #receiptSubContainer class="receipt-sub-container">
+        <div class="receipt-header">
+            <h2>
+                Invoice
+                <span style="color: #6556c5;">#234fv432</span>
+            </h2>
+            <p>{{propertyData.propertyDetails?.name}}</p>
+        </div>
+        <div class="receipt-details">
+            <div class="property-details">
+                <h3>Property Details</h3>
+                <p>{{propertyData.propertyDetails?.name}}</p>
+                <p>
+                    {{propertyData.propertyDetails?.locality}}, {{propertyData.propertyDetails?.city}}
+                </p>
+            </div>
+            <div class="bill-to">
+                <h3>Bill To</h3>
+                <p>{{userData.firstName}} {{userData.lastName}}</p>
+                <p>Contact: {{userData.contactNumber}}</p>
+                <p>Email: {{userData.email}}</p>
+            </div>
+        </div>
+        <div class="dates">
+            <div class="invoice-date">
+                <h3>Invoice Date</h3>
+                <p>{{currentDate}}</p>
+            </div>
+            <div class="due-date">
+                <h3>Due Date</h3>
+                <p>{{dueDate}}</p>
+            </div>
+        </div>
+        <div class="payment-details">
+            <h3>Payment Details</h3>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">Months</th>
+                        <th scope="col">Total Rent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{propertyData.propertyDetails?.name}}</td>
+                        <td>1</td>
+                        <td>{{propertyData.rentalDetails?.expectedRent}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="terms">
+            <div class="heading">Terms and Conditions</div>
+            <small class="condition">
+                Please make the payment by the due date to avoid any late fees.
+            </small>
+        </div>
+    </div>
+</div>

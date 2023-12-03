@@ -1,0 +1,81 @@
+<div class="login-container">
+  <div class="login-left">
+    <div class="login-top">
+      <div class="heading">
+        <p>
+          Log In
+          <span style="color: #3d25d8;">.</span>
+        </p>
+      </div>
+      <form [formGroup]="loginForm" class="login-form">
+        <div class="inputs">
+          <div class="form-group input">
+            <input formControlName="email"
+                   id="exampleInputEmail1"
+                   placeholder="Enter email"
+                   type="email" />
+
+            <small *ngIf="loginForm.controls?.['email']?.errors?.['required']"
+                   class="text-danger">
+              Email address is required
+            </small>
+            <small *ngIf="loginForm.controls?.['email']?.errors?.['email']"
+                   class="text-danger">
+              Enter a valid email
+            </small>
+
+            <small *ngIf="loginForm.controls?.['email']?.errors===null"
+                   class="text-success">
+              Great!
+            </small>
+          </div>
+
+          <div class="form-group input">
+            <input formControlName="password"
+                   id="exampleInputPassword1"
+                   placeholder="Password"
+                   type="password" />
+            <small *ngIf="loginForm.controls?.['password']?.errors?.['required']"
+                   class="text-danger">
+              Password is required
+            </small>
+          
+
+            <small *ngIf="loginForm.controls?.['password']?.errors===null"
+                   class="text-success">
+              Great!
+            </small>
+          </div>
+        </div>
+        <div class="form-group remember-me">
+          <input (change)="toggleRememberMe()"
+                 id="rememberMeCheckbox"
+                 type="checkbox" />
+          <label for="rememberMeCheckbox">
+            {{ rememberMe ? 'Remembered' : 'Remember me' }}
+          </label>
+        </div>
+
+        <div class="submit">
+          <button (click)="handleUserLogin()">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="login-bottom">
+      <div class="signup">
+        <p>Don't have an account?</p>
+        <a (click)="handleSignup()">Create a new One</a>
+      </div>
+    </div>
+  </div>
+  <div class="login-right">
+    <img alt src="../../../assets//login.png" />
+  </div>
+</div>
+
+<app-toast (visibleChange)="showToast = $event"
+           [headerMessage]="headerMessage"
+           [speed]="100"
+           [toastMessage]="toastMessage"
+           [visible]="showToast">
+</app-toast>

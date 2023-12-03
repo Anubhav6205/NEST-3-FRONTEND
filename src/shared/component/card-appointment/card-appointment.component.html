@@ -1,0 +1,32 @@
+<div class="appointment-card-container" data-aos="fade-up" [ngStyle]="{
+    'backgroundColor': themeService.currentTheme === 'light' ? 'white' : '#201c21',
+    'color': themeService.currentTheme === 'light' ? 'black' : 'white',
+    'box-shadow': themeService.currentTheme === 'light' ? 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px' : 'white'
+  }"
+  >
+    <div class="card-top"  >
+        <div class="image">
+            <img [src]="appointment.propertyDetails?.propertyGallery![0]" alt="">
+        </div>
+    </div>
+    <div class="card-bottom" >
+        <div class="top">
+            <div class="price">₹{{appointment.propertyDetails?.rentalDetails?.expectedRent}}</div>
+            <div class="time">{{time}}</div>
+        </div>
+        <div class="middle">
+            {{appointment.propertyDetails?.propertyDetails?.name}}, {{appointment.propertyDetails?.propertyDetails?.city}}
+            
+        </div>
+        <div class="bottom">
+       
+                <span *ngIf="appointment.isUser">Landlord: {{appointment.landlordDetails?.firstName}} {{appointment.landlordDetails?.lastName}}</span>
+                <span *ngIf="appointment.isUser">Contact Number: {{appointment.landlordDetails?.contactNumber}} </span>
+                
+
+                <span *ngIf="appointment.isUser===false">Landlord: {{appointment.landlordDetails?.firstName}} {{appointment.landlordDetails?.lastName}}</span>
+                <span *ngIf="appointment.isUser===false">Contact Number: {{appointment.landlordDetails?.contactNumber}} </span>
+            
+        </div>
+    </div>
+</div>

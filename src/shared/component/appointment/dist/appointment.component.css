@@ -1,0 +1,112 @@
+.appointmnet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+.appointmnet-container mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.appointmnet-container mat-form-field button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.appointmnet-container mat-form-field button:hover {
+  background-color: #1565C0;
+}
+.appointmnet-container .slot-container {
+  width: 100%;
+}
+.appointmnet-container .slot-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.appointmnet-container .slot-container .slots {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.appointmnet-container .slot-container .slots .morning-container,
+.appointmnet-container .slot-container .slots .afternoon-container,
+.appointmnet-container .slot-container .slots .evening-container {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+.appointmnet-container .slot-container .slots .morning-container h4,
+.appointmnet-container .slot-container .slots .afternoon-container h4,
+.appointmnet-container .slot-container .slots .evening-container h4 {
+  margin-bottom: 10px;
+}
+.appointmnet-container .slot-container .slots .morning-container .morning,
+.appointmnet-container .slot-container .slots .morning-container .afternoon,
+.appointmnet-container .slot-container .slots .morning-container .evening,
+.appointmnet-container .slot-container .slots .afternoon-container .morning,
+.appointmnet-container .slot-container .slots .afternoon-container .afternoon,
+.appointmnet-container .slot-container .slots .afternoon-container .evening,
+.appointmnet-container .slot-container .slots .evening-container .morning,
+.appointmnet-container .slot-container .slots .evening-container .afternoon,
+.appointmnet-container .slot-container .slots .evening-container .evening {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.appointmnet-container .slot-container .slots .morning-container .morning button,
+.appointmnet-container .slot-container .slots .morning-container .afternoon button,
+.appointmnet-container .slot-container .slots .morning-container .evening button,
+.appointmnet-container .slot-container .slots .afternoon-container .morning button,
+.appointmnet-container .slot-container .slots .afternoon-container .afternoon button,
+.appointmnet-container .slot-container .slots .afternoon-container .evening button,
+.appointmnet-container .slot-container .slots .evening-container .morning button,
+.appointmnet-container .slot-container .slots .evening-container .afternoon button,
+.appointmnet-container .slot-container .slots .evening-container .evening button {
+  background-color: #4CAF50;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.52rem;
+}
+.appointmnet-container .slot-container .slots .morning-container .morning button.active,
+.appointmnet-container .slot-container .slots .morning-container .afternoon button.active,
+.appointmnet-container .slot-container .slots .morning-container .evening button.active,
+.appointmnet-container .slot-container .slots .afternoon-container .morning button.active,
+.appointmnet-container .slot-container .slots .afternoon-container .afternoon button.active,
+.appointmnet-container .slot-container .slots .afternoon-container .evening button.active,
+.appointmnet-container .slot-container .slots .evening-container .morning button.active,
+.appointmnet-container .slot-container .slots .evening-container .afternoon button.active,
+.appointmnet-container .slot-container .slots .evening-container .evening button.active {
+  background-color: #d32f2f;
+  color: #fff;
+}
+.appointmnet-container .slot-container .slots .morning-container .morning button:hover,
+.appointmnet-container .slot-container .slots .morning-container .afternoon button:hover,
+.appointmnet-container .slot-container .slots .morning-container .evening button:hover,
+.appointmnet-container .slot-container .slots .afternoon-container .morning button:hover,
+.appointmnet-container .slot-container .slots .afternoon-container .afternoon button:hover,
+.appointmnet-container .slot-container .slots .afternoon-container .evening button:hover,
+.appointmnet-container .slot-container .slots .evening-container .morning button:hover,
+.appointmnet-container .slot-container .slots .evening-container .afternoon button:hover,
+.appointmnet-container .slot-container .slots .evening-container .evening button:hover {
+  background-color: #45a049;
+}
+.appointmnet-container button {
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.appointmnet-container button:hover {
+  background-color: #d32f2f;
+}

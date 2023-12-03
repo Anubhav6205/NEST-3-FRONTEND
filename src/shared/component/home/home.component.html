@@ -1,0 +1,220 @@
+<div [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'white':'#181818'}"
+     class="home-component">
+    <div class="image">
+        <img [speed]="0"
+             alt
+             class="animation-bg-1"
+             ngx-parallax
+             src="../../../assets/home-bg1.png" />
+        <img [speed]="-3"
+             alt
+             class="animation-bg-2"
+             ngx-parallax
+             src="../../../assets/home-bg2.png" />
+        <img [speed]="10"
+             alt
+             class="animation-bg-3"
+             ngx-parallax
+             src="../../../assets/home-bg3.png" />
+        <img [speed]="30"
+             alt
+             class="animation-image"
+             ngx-parallax
+             src="../../../assets/home.png" />
+
+        <img [speed]="-55"
+             alt
+             class="animation-sun"
+             ngx-parallax
+             propertyValue="rotate"
+             src="../../../assets/sun.png" *ngIf="themeService.currentTheme==='light'" />
+             <img [speed]="-55"
+             alt
+             class="animation-sun"
+             ngx-parallax
+             propertyValue="rotate"
+             src="../../../assets/moon.png" *ngIf="themeService.currentTheme==='dark'"/>
+    </div>
+    <div [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}"
+         class="home-top">
+        <div class="heading animate__animated animate__fadeInDown">
+            <p>Your one-stop shop for finding the right rental.</p>
+        </div>
+        <div class="sub-headings" >
+            <p class="first"  [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)'}">Hassle-Free Housing</p>
+            <p class="second"  [ngStyle]="{'backgroundColor':themeService.currentTheme==='light'?'#5e4ae329':'rgba(94, 74, 227, 0.575)'}">Expert Guidance</p>
+        </div>
+        <div class="search" >
+            <form [formGroup]="searchPropertyForm" class="form-inline d-flex">
+                <div class="form-group select">
+                    <select class="form-control"
+                            formControlName="city"
+                            id="city"
+                            name="city" >
+                        <option value  >Select a city</option>
+                        <option [value]="location"
+                                *ngFor="let location of locations">
+                            {{ location }}
+                        </option>
+                    </select>
+                </div>
+                <div class="middle">
+                    <div class="form-group input">
+                        <input class="form-control"
+                               formControlName="locality"
+                               placeholder="Enter for localities saperated by comma"
+                               type="text" />
+                    </div>
+
+                    <div *ngIf="searchPropertyForm.value.locality!=''"
+                         class="recommendations">
+                        <ul >
+                            <li (click)="handleAutoFill(locality)"
+                                *ngFor="let locality of localitites" [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}">
+                                {{locality}} 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div (click)="handleSearchProperty()" class="search-button">
+                    <i class="bi bi-search"></i>
+                    <button>Search</button>
+                </div>
+            </form>
+        </div>
+        <div *ngIf="userService.handleGetRole()==='landlord'" class="property">
+            <p>Are you a Property Owner?</p>
+            <button (click)="handlePropertyAdd()">Post Free Property Ad</button>
+        </div>
+    </div>
+    <div [ngStyle]="{'color':themeService.currentTheme==='light'?'black':'white'}"
+         class="home-bottom">
+        <div class="benefits-container">
+            <div class="heading">
+                <p>
+                    Why Use
+                    <span style="font-weight: bold;">NEST</span>?
+                </p>
+            </div>
+            <div class="benefits">
+                <div data-aos="fade-up-right" >
+                    <i class="fa-solid fa-person-military-pointing"
+                       style="color: #342786;">
+                    </i>
+                    <div>
+                        <p class="title">Avoid Brokers</p>
+                        <p class="sub-title">
+                            Connect to verified owners to save brokerage
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up">
+                    <i class="fa-regular fa-file" style="color: #342786;"></i>
+                    <div>
+                        <p class="title">Free Listing</p>
+                        <p class="sub-title">
+                            Easy listing process. Also using Whatsapp
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left">
+                    <i class="fa-solid fa-house" style="color: #342786;"></i>
+                    <div>
+                        <p class="title">Shortlist without Visit</p>
+                        <p class="sub-title">
+                            Extensive information makes it easy
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up">
+                    <i class="fa-solid fa-boxes-packing"
+                       style="color: #342786;">
+                    </i>
+                    <div>
+                        <p class="title">Packers & Movers</p>
+                        <p class="sub-title">
+                            Assistance in shifting to your new Nest
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seller-rated">
+            <div class="titles">
+                <div class="top">
+                    How are
+                    <span style="font-weight: bolder;">
+                        sellers rated
+                    </span>
+                </div>
+                <div class="bottom">
+                    We pick the best sellers for you who are best in class in various aspects
+                </div>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <div class="left-top">
+                        <div class="after">
+                            <p class="title">High Response Rate</p>
+                            <p class="description">
+                                We pick sellers for you who give you priority. Over 90% of our top sellers respond to enquiries within the first 24 hours!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-bottom">
+                        <div class="after">
+                            <p class="title">Wide Coverage</p>
+                            <p class="description">
+                                Sellers with a wide variety of properties are more likely to satisfy your demands. More the options, better is your decision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div [ngClass]="{'fade': fade}" class="middle">
+                    <img [src]="sellerImage" alt />
+                </div>
+                <div class="right">
+                    <div class="right-top">
+                        <div class="after">
+                            <p class="title">Deals Closed</p>
+                            <p class="description">
+                                We choose sellers who have previously closed deals with similar requirement as you have. They'll understand your needs better
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-bottom">
+                        <div class="after">
+                            <p class="title">Rated & Reviewed</p>
+                            <p class="description">
+                                Testimonials from genuine buyers are the best way to judge a seller. Better the ratings, better will be your experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="car-moving">
+            <div class="titles">
+                <div class="top">Why waiting?</div>
+                <div class="bottom">Hop on your car and get a NEST Now.</div>
+                <div class="car">
+                    <img [speed]="45"
+                         alt
+                         axe="x"
+                         class="car-body"
+                         ngx-parallax
+                         src="../../../assets/car.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-toast (visibleChange)="showToast = $event"
+               [headerMessage]="headerMessage"
+               [speed]="100"
+               [toastMessage]="toastMessage"
+               [visible]="showToast">
+    </app-toast>
+</div>

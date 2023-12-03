@@ -1,0 +1,313 @@
+.hamburger {
+  display: none;
+  background-color: rgba(235, 235, 235, 0.676);
+}
+
+.search-result-container {
+  display: flex;
+  font-family: "Jost", sans-serif;
+  background-color: rgba(235, 235, 235, 0.676);
+  padding: 1rem;
+}
+.search-result-container .filters {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  height: 90vh;
+  overflow: auto;
+  transition: 1s ease-in-out;
+}
+.search-result-container .filters::-webkit-scrollbar {
+  width: 8px;
+}
+.search-result-container .filters::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.5176470588);
+  border-radius: 5px;
+}
+.search-result-container .filters::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.search-result-container .filters::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(85, 85, 85, 0.6470588235);
+}
+.search-result-container .filters .heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.search-result-container .filters .bhk-container p {
+  font-weight: bold;
+}
+.search-result-container .filters .bhk-container .bhk-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.search-result-container .filters .bhk-container .bhk-data button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  outline-color: rgba(25, 59, 210, 0.329);
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.search-result-container .filters .bhk-container .bhk-data button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .bhk-container .bhk-data button.active {
+  background-color: rgb(25, 59, 210);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+  border-radius: 0.2rem;
+  color: rgb(13, 12, 12);
+}
+.search-result-container .filters .apartment-type-container p {
+  font-weight: bold;
+}
+.search-result-container .filters .apartment-type-container .apartment-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.search-result-container .filters .apartment-type-container .apartment-data button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  outline-color: rgba(25, 59, 210, 0.329);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.search-result-container .filters .apartment-type-container .apartment-data button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .apartment-type-container .apartment-data button.active {
+  background-color: rgb(25, 59, 210);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+  color: rgb(0, 0, 0);
+}
+.search-result-container .filters .property-age-container p {
+  font-weight: bold;
+}
+.search-result-container .filters .property-age-container div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.search-result-container .filters .property-age-container div button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  transition: 0.2s ease-in-out;
+  outline-color: rgba(25, 59, 210, 0.329);
+  cursor: pointer;
+}
+.search-result-container .filters .property-age-container div button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .property-age-container div button.active {
+  background-color: rgb(25, 59, 210);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+  color: rgb(0, 0, 0);
+}
+.search-result-container .filters .facing-direction p {
+  font-weight: bold;
+}
+.search-result-container .filters .facing-direction .direction-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.search-result-container .filters .facing-direction .direction-data button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  outline-color: rgba(25, 59, 210, 0.329);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.search-result-container .filters .facing-direction .direction-data button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .facing-direction .direction-data button.active {
+  background-color: rgb(25, 59, 210);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+}
+.search-result-container .filters .furnish-types-container p {
+  font-weight: bold;
+}
+.search-result-container .filters .furnish-types-container .furnish-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.search-result-container .filters .furnish-types-container .furnish-data div button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  outline-color: rgba(25, 59, 210, 0.329);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.search-result-container .filters .furnish-types-container .furnish-data div button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .furnish-types-container .furnish-data div button.active {
+  background-color: rgb(25, 59, 210);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+}
+.search-result-container .filters .parking-options-container p {
+  font-weight: bold;
+}
+.search-result-container .filters .parking-options-container .parking-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.search-result-container .filters .parking-options-container .parking-data div button {
+  padding: 0.4rem 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(94, 74, 227, 0.1607843137);
+  outline-color: rgba(25, 59, 210, 0.329);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.search-result-container .filters .parking-options-container .parking-data div button:hover {
+  outline: auto;
+  outline-color: rgba(25, 59, 210, 0.329);
+}
+.search-result-container .filters .parking-options-container .parking-data div button.active {
+  background-color: rgb(25, 59, 210);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgba(25, 59, 210, 0.584);
+}
+.search-result-container .results {
+  width: 80%;
+  padding: 0 1rem;
+  flex: 1;
+  transition: 1s ease-in-out;
+}
+.search-result-container .results ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.search-result-container .results ul li {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.no-content {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  flex-direction: column;
+  gap: 1rem;
+}
+.no-content p {
+  font-size: 0.8rem;
+  color: gray;
+  font-family: "Jost", sans-serif;
+}
+.no-content i {
+  font-size: 2rem;
+  animation: rotate infinite 5s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    padding: 0 0 0 1rem;
+  }
+  .search-result-container {
+    padding: 0.5rem !important;
+  }
+  .search-result-container .filters {
+    height: auto !important;
+    overflow: hidden;
+    display: flex;
+    width: 40%;
+    gap: 1rem;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    padding: 0.1rem !important;
+  }
+  .search-result-container .filters button {
+    font-size: 0.5rem !important;
+  }
+  .search-result-container .filters.active {
+    height: 100vh !important;
+    overflow-y: auto !important;
+  }
+  .search-result-container .results {
+    flex: 1;
+    width: 100%;
+    padding: 0 !important;
+  }
+  .toggle-filters-button {
+    background-color: rgba(94, 74, 227, 0.1607843137);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .results {
+    width: 100% !important;
+  }
+  /* Adjustments for smaller buttons and texts */
+  .filters button,
+  .heading,
+  .bhk-container p,
+  .apartment-type-container p,
+  .property-age-container p,
+  .facing-direction p,
+  .furnish-types-container p,
+  .parking-options-container p {
+    font-size: 0.8rem !important;
+  }
+}
+.arrow {
+  padding: 1rem;
+  background-color: rgba(235, 235, 235, 0.676);
+  transition: 0.2s ease-in-out;
+}
+.arrow:hover {
+  color: rgba(70, 54, 177, 0.0862745098);
+}/*# sourceMappingURL=search-result.component.css.map */
